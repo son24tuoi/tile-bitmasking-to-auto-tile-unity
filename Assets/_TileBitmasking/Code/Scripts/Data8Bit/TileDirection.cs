@@ -79,5 +79,20 @@ namespace TileBitmasking.Data8Bit
 
             return result;
         }
+
+        public static string Information(this TileDirection tileDirection)
+        {
+            string s = string.Empty;
+
+            for (int i = 0; i < MaxBit; i++)
+            {
+                TileDirection flag = (TileDirection)(1 << i);
+
+                if (tileDirection.HasFlag(flag))
+                    s += (int)flag + ((i == MaxBit - 1) ? "." : ", ");
+            }
+
+            return s;
+        }
     }
 }

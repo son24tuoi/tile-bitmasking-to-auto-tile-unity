@@ -8,6 +8,7 @@ namespace TileBitmasking.Data4Bit
     public class Grid : MonoBehaviour
     {
         [SerializeField] private TextAsset gridData;
+        [SerializeField] private Transform bound;
 
         [SerializeField] private Tile[,] tiles;
 
@@ -32,8 +33,6 @@ namespace TileBitmasking.Data4Bit
             mainCamera = Camera.main;
 
             Test();
-
-            Init(gridData.GetDimensions());
         }
 
         [ContextMenu(nameof(Test))]
@@ -67,6 +66,14 @@ namespace TileBitmasking.Data4Bit
                     tiles[x, y].neighbors = GetNeighbors(x, y);
                 }
             }
+
+            SetBound();
+        }
+
+        private void SetBound()
+        {
+            bound.localPosition = new Vector3((Width - 1) / 2f, (Height - 1) / 2f, 0);
+            bound.localScale = new Vector3(Width, Height, 1);
         }
 
         public TileDirection GetNeighbors(int x, int y)

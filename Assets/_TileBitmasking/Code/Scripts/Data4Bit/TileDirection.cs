@@ -32,5 +32,20 @@ namespace TileBitmasking.Data4Bit
                 _ => throw new System.Exception()
             };
         }
+
+        public static string Information(this TileDirection tileDirection)
+        {
+            string s = string.Empty;
+
+            for (int i = 0; i < MaxBit; i++)
+            {
+                TileDirection flag = (TileDirection)(1 << i);
+
+                if (tileDirection.HasFlag(flag))
+                    s += (int)flag + ((i == MaxBit - 1) ? "." : ", ");
+            }
+
+            return s;
+        }
     }
 }

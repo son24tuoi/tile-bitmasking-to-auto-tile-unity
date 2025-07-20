@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+using TileBitmasking.Sample;
 using UnityEngine;
 
 namespace TileBitmasking.Data8Bit
@@ -10,6 +10,7 @@ namespace TileBitmasking.Data8Bit
         [Header("Element")]
         [SerializeField] private Grid grid;
         [SerializeField] private Piece piecePrefab;
+        [SerializeField] private InfoCanvas infoCanvas;
 
         [Header("Data")]
         [SerializeField] private Piece[,] pieces;
@@ -64,6 +65,8 @@ namespace TileBitmasking.Data8Bit
                 pieces[tile.xIndex, tile.yIndex] = instance;
 
                 UpdateNeighborPieces(instance);
+                
+                infoCanvas.Log(instance.ToString());
             }
 
         }

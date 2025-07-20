@@ -34,6 +34,13 @@ namespace TileBitmasking.Data8Bit
             spriteRenderer.sprite = pieceSetProfile.GetTile(BitmaskingValue);
         }
 
+        [ContextMenu(nameof(ToString))]
+        public override string ToString()
+        {
+            // Debug.Log($"Piece_({tile.xIndex}, {tile.yIndex})_{BitmaskingValue}");
+            return $"Piece({tile.xIndex}, {tile.yIndex}),\nbitmasking value: {BitmaskingValue},\nneighbors: {neighbors.Information()}";
+        }
+
         public void SetNeighbors(TileDirection neighbors)
         {
             this.neighbors = neighbors;
