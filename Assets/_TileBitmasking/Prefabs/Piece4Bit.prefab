@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6468036060051761143}
   - component: {fileID: 9024725424469654399}
   m_Layer: 0
-  m_Name: Piece
+  m_Name: Piece4Bit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

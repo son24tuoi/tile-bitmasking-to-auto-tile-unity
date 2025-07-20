@@ -6,7 +6,9 @@ namespace TileBitmasking
 {
     public class Settings
     {
-        public const float BorderSizeX = 0f;
-        public const float BorderSizeY = 0f;
+        public const float BorderSizeCamX = 1.5f;
+        public const float BorderSizeCamY = 0f;
+        public const float OffsetCamX = -1.5f;
+        public const float OffsetCamY = 0f;
     }
 }

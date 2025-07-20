@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d77ae2897f5bd77438a6486e0f023057, type: 3}
+  m_Name: PieceSetProfileSO_8Bit
+  m_EditorClassIdentifier: 
+  bitmaskingTiles:
+  - tileDirection: 208
+    sprite: {fileID: -217955755, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 248
+    sprite: {fileID: -1533118991, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 104
+    sprite: {fileID: -2068443963, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 64
+    sprite: {fileID: 1123824556, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 80
+    sprite: {fileID: -281238770, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 120
+    sprite: {fileID: -1451373803, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 216
+    sprite: {fileID: 172736569, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 72
+    sprite: {fileID: 939843315, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 88
+    sprite: {fileID: -1197958496, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 126
+    sprite: {fileID: -164132766, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 214
+    sprite: {fileID: -41221324, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: -1
+    sprite: {fileID: 1750221888, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 107
+    sprite: {fileID: 714965816, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 66
+    sprite: {fileID: 716412218, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 86
+    sprite: {fileID: -1011415167, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 127
+    sprite: {fileID: 985219541, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 223
+    sprite: {fileID: -1521078411, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 75
+    sprite: {fileID: -979119459, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 95
+    sprite: {fileID: -624565565, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 219
+    sprite: {fileID: -278728481, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 22
+    sprite: {fileID: -1662042137, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 31
+    sprite: {fileID: -1797941167, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 11
+    sprite: {fileID: -59109172, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 2
+    sprite: {fileID: 862972622, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 210
+    sprite: {fileID: 1166167163, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 251
+    sprite: {fileID: -1599634804, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 254
+    sprite: {fileID: -1978493383, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 106
+    sprite: {fileID: 1754494245, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 250
+    sprite: {fileID: -614353088, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 218
+    sprite: {fileID: -934400328, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 122
+    sprite: {fileID: -1457521921, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 16
+    sprite: {fileID: 414412987, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 24
+    sprite: {fileID: -895620983, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 8
+    sprite: {fileID: 1598448414, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 0
+    sprite: {fileID: -692764870, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 18
+    sprite: {fileID: -656260126, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 27
+    sprite: {fileID: -1800355747, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 30
+    sprite: {fileID: 158911929, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 10
+    sprite: {fileID: 413654424, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 26
+    sprite: {fileID: -1876177504, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 94
+    sprite: {fileID: -599570828, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 91
+    sprite: {fileID: -962841248, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 82
+    sprite: {fileID: -1516670688, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 123
+    sprite: {fileID: 778814250, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 222
+    sprite: {fileID: 1558992673, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 74
+    sprite: {fileID: 1527672482, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  - tileDirection: 90
+    sprite: {fileID: 1453732757, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}

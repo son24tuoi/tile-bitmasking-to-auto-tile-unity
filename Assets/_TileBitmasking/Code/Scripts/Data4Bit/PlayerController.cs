@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using TileBitmasking.Data4Bit;
 using UnityEngine;
 
-namespace TileBitmasking
+namespace TileBitmasking.Data4Bit
 {
     public class PlayerController : MonoBehaviour
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace TileBitmasking.Data4Bit
+namespace TileBitmasking.Data8Bit
 {
     public class PieceGenerator : MonoBehaviour
     {
@@ -48,6 +48,9 @@ namespace TileBitmasking.Data4Bit
             int xIndex = Mathf.FloorToInt(worldPos.x);
             int yIndex = Mathf.FloorToInt(worldPos.y);
 
+            if (!IsWithinBounds(xIndex, yIndex))
+                return;
+
             if (pieces[xIndex, yIndex] != null)
                 return;
 
@@ -65,23 +68,30 @@ namespace TileBitmasking.Data4Bit
 
         }
 
-        public TileDirection[] GetNeighbors(Tile tile)
+        public TileDirection GetNeighbors(Tile tile)
         {
-            List<TileDirection> neighbors = new List<TileDirection>();
+            TileDirection neighbors = TileDirection.None;
 
-            Vector2[] neighborPositions = tile.GetNeighborPositions();
-            int x, y;
+            TileDirection flag; // cache
+            Vector2 pos; // cache
 
-            for (int i = 0; i < neighborPositions.Length; i++)
+            for (int i = 0; i < TileDirectionExtensions.MaxBit; i++)
             {
-                x = (int)neighborPositions[i].x;
-                y = (int)neighborPositions[i].y;
+                flag = (TileDirection)(1 << i);
 
-                if (pieces[x, y] != null)
-                    neighbors.Add(tile.neighbors[i]);
+                if (!tile.neighbors.HasFlag(flag))
+                    continue;
+
+                pos = tile.GetNeighborPosition(flag);
+
+                if (!IsWithinBounds((int)pos.x, (int)pos.y))
+                    continue;
+
+                if (pieces[(int)pos.x, (int)pos.y] != null)
+                    neighbors |= flag;
             }
 
-            return neighbors.ToArray();
+            return neighbors;
         }
 
         private void UpdateNeighborPieces(Piece piece)
@@ -106,6 +116,11 @@ namespace TileBitmasking.Data4Bit
                     }
                 }
             }
+        }
+
+        public bool IsWithinBounds(int x, int y)
+        {
+            return grid.IsWithinBounds(x, y);
         }
 
 

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TileBitmasking.Data4Bit
+namespace TileBitmasking.Data8Bit
 {
     public class Grid : MonoBehaviour
     {
@@ -21,10 +21,14 @@ namespace TileBitmasking.Data4Bit
         public int Height => height;
 
         public static readonly Vector2[] AllTileDirections = {
+            new Vector2(-1, 1),
             Vector2.up,
+            new Vector2(1, 1),
             Vector2.left,
             Vector2.right,
+            new Vector2(-1, -1),
             Vector2.down,
+            new Vector2(1, -1),
         };
 
         private void Start()
@@ -69,9 +73,9 @@ namespace TileBitmasking.Data4Bit
             }
         }
 
-        public TileDirection[] GetNeighbors(int x, int y)
+        public TileDirection GetNeighbors(int x, int y)
         {
-            List<TileDirection> neighbors = new List<TileDirection>();
+            TileDirection neighbors = TileDirection.None;
 
             Vector2 dir;
             int newX, newY;
@@ -86,11 +90,11 @@ namespace TileBitmasking.Data4Bit
                 if (IsWithinBounds(newX, newY) &&
                     tiles[newX, newY] != null)
                 {
-                    neighbors.Add((TileDirection)i);
+                    neighbors |= (TileDirection)(1 << i);
                 }
             }
 
-            return neighbors.ToArray();
+            return neighbors;
         }
 
         public bool IsWithinBounds(int x, int y)

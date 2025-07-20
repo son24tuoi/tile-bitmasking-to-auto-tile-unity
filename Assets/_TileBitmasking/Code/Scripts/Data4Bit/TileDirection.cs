@@ -2,29 +2,23 @@ using UnityEngine;
 
 namespace TileBitmasking.Data4Bit
 {
+    [System.Flags]
     public enum TileDirection
     {
-        North = 0,
-        West = 1,
-        East = 2,
-        South = 3
+        None = 0,
+        North = 1,
+        West = 2,
+        East = 4,
+        South = 8
     }
 
     public static class TileDirectionExtensions
     {
+        public const int MaxBit = 5;
+
         public static int ToValue(this TileDirection direction)
         {
             return (int)Mathf.Pow(2f, (int)direction);
-        }
-
-        public static int CalculationBitmaskingValue(this TileDirection[] neighbors)
-        {
-            int result = 0;
-            for (int i = 0; i < neighbors.Length; i++)
-            {
-                result += neighbors[i].ToValue();
-            }
-            return result;
         }
 
         public static Vector2 ToVector2(this TileDirection tileDirection)
