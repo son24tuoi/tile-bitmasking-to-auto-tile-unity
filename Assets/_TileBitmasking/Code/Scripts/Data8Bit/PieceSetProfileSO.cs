@@ -1,4 +1,6 @@
 using System;
+using AYellowpaper.SerializedCollections;
+using TileBitmasking.Data8Bit.Attribute;
 using UnityEngine;
 
 namespace TileBitmasking.Data8Bit
@@ -6,21 +8,13 @@ namespace TileBitmasking.Data8Bit
     [CreateAssetMenu(fileName = "PieceSetProfileSO_8Bit", menuName = "Tile Bitmasking/Data 8 Bit/Piece Set Profile", order = 0)]
     public class PieceSetProfileSO : ScriptableObject
     {
-        [SerializeField] private BitmaskingTile[] bitmaskingTiles;
-
-        [Serializable]
-        public struct BitmaskingTile
-        {
-            public TileDirection tileDirection;
-            public Sprite sprite;
-        }
+        [SerializeField] private SerializedDictionary<TileDirection, Sprite> bitMaskingTilesDict = new SerializedDictionary<TileDirection, Sprite>();
 
         public Sprite GetTile(int bitmaskingValue)
         {
-            for (int i = 0; i < bitmaskingTiles.Length; i++)
+            if (bitMaskingTilesDict.ContainsKey((TileDirection)bitmaskingValue))
             {
-                if (bitmaskingValue == bitmaskingTiles[i].tileDirection.ToValue())
-                    return bitmaskingTiles[i].sprite;
+                return bitMaskingTilesDict[(TileDirection)bitmaskingValue];
             }
 
             return null;
