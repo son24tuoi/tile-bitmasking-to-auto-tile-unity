@@ -12,20 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf7e7cdb9af9df846af8115687b7f359, type: 3}
   m_Name: PieceSetProfileSO_4Bit
   m_EditorClassIdentifier: 
-  bitMaskingTiles:
-  - {fileID: -692764870, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: 862972622, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: 1598448414, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -59109172, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: 414412987, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -1662042137, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -895620983, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -1797941167, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: 1123824556, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: 716412218, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -2068443963, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: 714965816, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -217955755, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -41221324, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: -1533118991, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
-  - {fileID: 1750221888, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+  bitMaskingTilesDict:
+    _serializedList:
+    - Key: 0
+      Value: {fileID: -692764870, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 1
+      Value: {fileID: 862972622, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 2
+      Value: {fileID: 1598448414, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 3
+      Value: {fileID: -59109172, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 4
+      Value: {fileID: 414412987, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 5
+      Value: {fileID: -1662042137, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 6
+      Value: {fileID: -895620983, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 7
+      Value: {fileID: -1797941167, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 8
+      Value: {fileID: 1123824556, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 9
+      Value: {fileID: 716412218, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 10
+      Value: {fileID: -2068443963, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 11
+      Value: {fileID: 714965816, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 12
+      Value: {fileID: -217955755, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 13
+      Value: {fileID: -41221324, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 14
+      Value: {fileID: -1533118991, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}
+    - Key: 15
+      Value: {fileID: 1750221888, guid: 11475f5b7a2fa7848812139e97d5c715, type: 3}

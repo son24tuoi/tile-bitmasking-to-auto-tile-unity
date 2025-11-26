@@ -47,5 +47,13 @@ namespace TileBitmasking.Data4Bit
 
             return s;
         }
+
+        public static bool IsEverything(this TileDirection tileDirection)
+        {
+            return tileDirection == (TileDirection.North |
+                                    TileDirection.West |
+                                    TileDirection.East |
+                                    TileDirection.South);
+        }
     }
 }
