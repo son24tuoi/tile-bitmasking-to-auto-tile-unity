@@ -11,11 +11,23 @@ namespace TileBitmasking.Data8Bit
         [SerializedDictionary("Tile Direction", "Sprite")]
         [SerializeField] private SerializedDictionary<TileDirection, Sprite> bitMaskingTilesDict = new SerializedDictionary<TileDirection, Sprite>();
 
+        private SerializedDictionary<int, Sprite> bitValueTileDict;
+
+        private void Awake()
+        {
+            bitValueTileDict = new SerializedDictionary<int, Sprite>();
+
+            foreach (var kvp in bitMaskingTilesDict)
+            {
+                bitValueTileDict.Add(kvp.Key.ToValue(), kvp.Value);
+            }
+        }
+
         public Sprite GetTile(int bitmaskingValue)
         {
-            if (bitMaskingTilesDict.ContainsKey((TileDirection)bitmaskingValue))
+            if (bitValueTileDict.ContainsKey(bitmaskingValue))
             {
-                return bitMaskingTilesDict[(TileDirection)bitmaskingValue];
+                return bitValueTileDict[bitmaskingValue];
             }
 
             return null;
