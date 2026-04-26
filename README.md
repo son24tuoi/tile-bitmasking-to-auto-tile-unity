@@ -11,7 +11,7 @@ Tile Bitmasking (also known as Auto-tiling with bitmasking) is a common techniqu
 # Preview
 
 <p align="center">
-  <a href="https://youtu.be/4yBm6dQy3Io">
+  <a href="https://youtu.be/4yBm6dQy3Io" target="_blank" rel="noopener noreferrer">
     <img src="https://github.com/user-attachments/assets/f8627a97-e4f2-473b-875c-f9fb34884401?raw=true" width="50%" alt="Video Demo Tile Bitmasking">
   </a>
   <br>
@@ -19,7 +19,7 @@ Tile Bitmasking (also known as Auto-tiling with bitmasking) is a common techniqu
 </p>
 
 <div align="center">
-  <a href="https://son24tuoi.github.io/prototype-unity/tile-bitmasking/">
+  <a href="https://son24tuoi.github.io/prototype-unity/tile-bitmasking/" target="_blank" rel="noopener noreferrer">
     <b>PLAY NOW</b>
   </a>
 </div>
