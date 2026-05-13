@@ -74,9 +74,9 @@ namespace TileBitmasking.Data4Bit.Attribute
 
             r.x = position.x + fullSize;
             r.y = position.y + size * 2;
-            r.width = size * 2;
+            r.width = size;
 
-            if (GUI.Button(r, "Everything"))
+            if (GUI.Button(r, "All"))
             {
                 value = ~TileDirection.None;
             }
