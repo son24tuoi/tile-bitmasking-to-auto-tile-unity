@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 namespace TileBitmasking.Data8Bit
@@ -93,6 +94,18 @@ namespace TileBitmasking.Data8Bit
             }
 
             return s;
+        }
+
+        public static bool IsEverything(this TileDirection tileDirection)
+        {
+            return tileDirection == (TileDirection.NorthWest |
+                                    TileDirection.North |
+                                    TileDirection.NorthEast |
+                                    TileDirection.West |
+                                    TileDirection.East |
+                                    TileDirection.SouthWest |
+                                    TileDirection.South |
+                                    TileDirection.SouthEast);
         }
     }
 }
