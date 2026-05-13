@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace TileBitmasking.Data8Bit
 {
-    public class Grid : MonoBehaviour
+    public class TileGrid : MonoBehaviour
     {
         [SerializeField] private TextAsset gridData;
         [SerializeField] private Transform bound;

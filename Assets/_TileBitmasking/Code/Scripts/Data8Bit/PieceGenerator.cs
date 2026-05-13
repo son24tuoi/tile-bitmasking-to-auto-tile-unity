@@ -8,7 +8,7 @@ namespace TileBitmasking.Data8Bit
     public class PieceGenerator : MonoBehaviour
     {
         [Header("Element")]
-        [SerializeField] private Grid grid;
+        [SerializeField] private TileGrid grid;
         [SerializeField] private Piece piecePrefab;
         [SerializeField] private InfoCanvas infoCanvas;
 
